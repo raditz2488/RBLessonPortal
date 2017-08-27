@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FCBBFB7880A2B321DB153F6 /* Pods_RBLessonPortal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3217AC21D5C3B3EF6EAEA664 /* Pods_RBLessonPortal.framework */; };
+		81990B201F527FC90091D373 /* RBRMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B1F1F527FC90091D373 /* RBRMUser.swift */; };
+		81990B221F52956D0091D373 /* RBRMCompanyIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B211F52956D0091D373 /* RBRMCompanyIDTests.swift */; };
+		81990B241F5297390091D373 /* RBUserProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B231F5297390091D373 /* RBUserProfileTests.swift */; };
+		81990B261F529BA60091D373 /* RBRMUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B251F529BA60091D373 /* RBRMUserProfile.swift */; };
+		81990B281F529BBF0091D373 /* RBRMCompanyID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B271F529BBF0091D373 /* RBRMCompanyID.swift */; };
+		81990B2A1F529CF40091D373 /* RBRMLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B291F529CF40091D373 /* RBRMLesson.swift */; };
+		81990B2C1F529FAA0091D373 /* RBRMLessonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B2B1F529FAA0091D373 /* RBRMLessonTests.swift */; };
+		81990B321F52B7040091D373 /* RBViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B311F52B7040091D373 /* RBViewConstants.swift */; };
+		81990B341F52BA370091D373 /* RBLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B331F52BA370091D373 /* RBLoginController.swift */; };
+		81990B361F52BE050091D373 /* RBLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B351F52BE050091D373 /* RBLoginViewModel.swift */; };
+		81990B3B1F52C0C70091D373 /* RBCredentialPersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B3A1F52C0C70091D373 /* RBCredentialPersistanceManager.swift */; };
+		81990B3D1F52D6510091D373 /* RBApplicationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B3C1F52D6510091D373 /* RBApplicationDataManager.swift */; };
+		81990B3F1F5303B10091D373 /* RBUserPersonalInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B3E1F5303B10091D373 /* RBUserPersonalInfoController.swift */; };
+		81990B411F5304110091D373 /* RBPersonalUserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B401F5304110091D373 /* RBPersonalUserInfoViewModel.swift */; };
+		81990B431F530C030091D373 /* RBUserLessonsInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B421F530C030091D373 /* RBUserLessonsInfoController.swift */; };
+		81990B451F530F330091D373 /* RBUserLessonsInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B441F530F330091D373 /* RBUserLessonsInfoViewModel.swift */; };
+		81990B471F53190B0091D373 /* RBTokenPersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B461F53190B0091D373 /* RBTokenPersistanceManager.swift */; };
+		81990B491F5325B20091D373 /* RBUserDataPersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B481F5325B20091D373 /* RBUserDataPersistanceManager.swift */; };
+		81990B4B1F5331370091D373 /* RBUserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81990B4A1F5331370091D373 /* RBUserProfileController.swift */; };
+		81AF51491F5131F400C2F4EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF51481F5131F400C2F4EE /* AppDelegate.swift */; };
+		81AF514E1F5131F400C2F4EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AF514C1F5131F400C2F4EE /* Main.storyboard */; };
+		81AF51501F5131F400C2F4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AF514F1F5131F400C2F4EE /* Assets.xcassets */; };
+		81AF51531F5131F400C2F4EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AF51511F5131F400C2F4EE /* LaunchScreen.storyboard */; };
+		81AF51691F5132B700C2F4EE /* RBAlamofireClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF51681F5132B700C2F4EE /* RBAlamofireClientTests.swift */; };
+		81AF516F1F5135A100C2F4EE /* RBAlamofireClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF516E1F5135A100C2F4EE /* RBAlamofireClient.swift */; };
+		81AF51731F51872F00C2F4EE /* RBJSONConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF51721F51872F00C2F4EE /* RBJSONConstants.swift */; };
+		81AF51751F51D2B500C2F4EE /* RBWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF51741F51D2B500C2F4EE /* RBWebServices.swift */; };
+		81AF51771F51D2F300C2F4EE /* RBWebServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF51761F51D2F300C2F4EE /* RBWebServicesTests.swift */; };
+		81AF517B1F51EF3D00C2F4EE /* RBUserTokensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF517A1F51EF3D00C2F4EE /* RBUserTokensTests.swift */; };
+		81AF517D1F51F25900C2F4EE /* RBUserTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF517C1F51F25900C2F4EE /* RBUserTokens.swift */; };
+		81AF517F1F51F75F00C2F4EE /* RBRMUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF517E1F51F75F00C2F4EE /* RBRMUserTests.swift */; };
+		DCA62EA2705C7329F04F0423 /* Pods_RBLessonPortalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9471FF25C73C831E6249D4 /* Pods_RBLessonPortalTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81AF515A1F5131F400C2F4EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81AF513D1F5131F400C2F4EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81AF51441F5131F400C2F4EE;
+			remoteInfo = RBLessonPortal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3217AC21D5C3B3EF6EAEA664 /* Pods_RBLessonPortal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBLessonPortal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9471FF25C73C831E6249D4 /* Pods_RBLessonPortalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBLessonPortalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75382D29E59693E24317ED7C /* Pods-RBLessonPortalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBLessonPortalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBLessonPortalTests/Pods-RBLessonPortalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81990B1F1F527FC90091D373 /* RBRMUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBRMUser.swift; path = Models/RBRMUser.swift; sourceTree = "<group>"; };
+		81990B211F52956D0091D373 /* RBRMCompanyIDTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBRMCompanyIDTests.swift; path = Models/RBRMCompanyIDTests.swift; sourceTree = "<group>"; };
+		81990B231F5297390091D373 /* RBUserProfileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBUserProfileTests.swift; path = Models/RBUserProfileTests.swift; sourceTree = "<group>"; };
+		81990B251F529BA60091D373 /* RBRMUserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBRMUserProfile.swift; path = Models/RBRMUserProfile.swift; sourceTree = "<group>"; };
+		81990B271F529BBF0091D373 /* RBRMCompanyID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBRMCompanyID.swift; path = Models/RBRMCompanyID.swift; sourceTree = "<group>"; };
+		81990B291F529CF40091D373 /* RBRMLesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBRMLesson.swift; path = Models/RBRMLesson.swift; sourceTree = "<group>"; };
+		81990B2B1F529FAA0091D373 /* RBRMLessonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBRMLessonTests.swift; path = Models/RBRMLessonTests.swift; sourceTree = "<group>"; };
+		81990B311F52B7040091D373 /* RBViewConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBViewConstants.swift; path = Views/RBViewConstants.swift; sourceTree = "<group>"; };
+		81990B331F52BA370091D373 /* RBLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBLoginController.swift; path = Views/RBLoginController.swift; sourceTree = "<group>"; };
+		81990B351F52BE050091D373 /* RBLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBLoginViewModel.swift; path = ViewModels/RBLoginViewModel.swift; sourceTree = "<group>"; };
+		81990B3A1F52C0C70091D373 /* RBCredentialPersistanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBCredentialPersistanceManager.swift; path = Models/RBCredentialPersistanceManager.swift; sourceTree = "<group>"; };
+		81990B3C1F52D6510091D373 /* RBApplicationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBApplicationDataManager.swift; path = Models/RBApplicationDataManager.swift; sourceTree = "<group>"; };
+		81990B3E1F5303B10091D373 /* RBUserPersonalInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBUserPersonalInfoController.swift; path = Views/RBUserPersonalInfoController.swift; sourceTree = "<group>"; };
+		81990B401F5304110091D373 /* RBPersonalUserInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBPersonalUserInfoViewModel.swift; path = ViewModels/RBPersonalUserInfoViewModel.swift; sourceTree = "<group>"; };
+		81990B421F530C030091D373 /* RBUserLessonsInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBUserLessonsInfoController.swift; path = Views/RBUserLessonsInfoController.swift; sourceTree = "<group>"; };
+		81990B441F530F330091D373 /* RBUserLessonsInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBUserLessonsInfoViewModel.swift; path = ViewModels/RBUserLessonsInfoViewModel.swift; sourceTree = "<group>"; };
+		81990B461F53190B0091D373 /* RBTokenPersistanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBTokenPersistanceManager.swift; path = Models/RBTokenPersistanceManager.swift; sourceTree = "<group>"; };
+		81990B481F5325B20091D373 /* RBUserDataPersistanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBUserDataPersistanceManager.swift; path = Models/RBUserDataPersistanceManager.swift; sourceTree = "<group>"; };
+		81990B4A1F5331370091D373 /* RBUserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBUserProfileController.swift; path = Views/RBUserProfileController.swift; sourceTree = "<group>"; };
+		81AF51451F5131F400C2F4EE /* RBLessonPortal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBLessonPortal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AF51481F5131F400C2F4EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81AF514D1F5131F400C2F4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81AF514F1F5131F400C2F4EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81AF51521F5131F400C2F4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81AF51541F5131F400C2F4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81AF51591F5131F400C2F4EE /* RBLessonPortalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBLessonPortalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AF515F1F5131F400C2F4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81AF51681F5132B700C2F4EE /* RBAlamofireClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBAlamofireClientTests.swift; path = Models/Networking/RBAlamofireClientTests.swift; sourceTree = "<group>"; };
+		81AF516E1F5135A100C2F4EE /* RBAlamofireClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBAlamofireClient.swift; path = Models/Networking/RBAlamofireClient.swift; sourceTree = "<group>"; };
+		81AF51721F51872F00C2F4EE /* RBJSONConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBJSONConstants.swift; path = Models/Networking/RBJSONConstants.swift; sourceTree = "<group>"; };
+		81AF51741F51D2B500C2F4EE /* RBWebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBWebServices.swift; path = Models/Networking/RBWebServices.swift; sourceTree = "<group>"; };
+		81AF51761F51D2F300C2F4EE /* RBWebServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBWebServicesTests.swift; path = Models/Networking/RBWebServicesTests.swift; sourceTree = "<group>"; };
+		81AF517A1F51EF3D00C2F4EE /* RBUserTokensTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBUserTokensTests.swift; path = Models/RBUserTokensTests.swift; sourceTree = "<group>"; };
+		81AF517C1F51F25900C2F4EE /* RBUserTokens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBUserTokens.swift; path = Models/RBUserTokens.swift; sourceTree = "<group>"; };
+		81AF517E1F51F75F00C2F4EE /* RBRMUserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBRMUserTests.swift; path = Models/RBRMUserTests.swift; sourceTree = "<group>"; };
+		899CEA57249F4D63AE1477C8 /* Pods-RBLessonPortal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBLessonPortal.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBLessonPortal/Pods-RBLessonPortal.release.xcconfig"; sourceTree = "<group>"; };
+		D0908D5F859063D4DE6CF007 /* Pods-RBLessonPortal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBLessonPortal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RBLessonPortal/Pods-RBLessonPortal.debug.xcconfig"; sourceTree = "<group>"; };
+		E4F172E6FF72DC254FD4B903 /* Pods-RBLessonPortalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RBLessonPortalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RBLessonPortalTests/Pods-RBLessonPortalTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81AF51421F5131F400C2F4EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FCBBFB7880A2B321DB153F6 /* Pods_RBLessonPortal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AF51561F5131F400C2F4EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA62EA2705C7329F04F0423 /* Pods_RBLessonPortalTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81990B301F52B6D90091D373 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81990B311F52B7040091D373 /* RBViewConstants.swift */,
+				81990B331F52BA370091D373 /* RBLoginController.swift */,
+				81990B3E1F5303B10091D373 /* RBUserPersonalInfoController.swift */,
+				81990B421F530C030091D373 /* RBUserLessonsInfoController.swift */,
+				81990B4A1F5331370091D373 /* RBUserProfileController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		81990B371F52BE100091D373 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				81990B351F52BE050091D373 /* RBLoginViewModel.swift */,
+				81990B401F5304110091D373 /* RBPersonalUserInfoViewModel.swift */,
+				81990B441F530F330091D373 /* RBUserLessonsInfoViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		81AF513C1F5131F400C2F4EE = {
+			isa = PBXGroup;
+			children = (
+				81AF51471F5131F400C2F4EE /* RBLessonPortal */,
+				81AF515C1F5131F400C2F4EE /* RBLessonPortalTests */,
+				81AF51461F5131F400C2F4EE /* Products */,
+				C2D655B86D9FD9919F36821D /* Pods */,
+				DB204CBDF815F503A63932EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		81AF51461F5131F400C2F4EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81AF51451F5131F400C2F4EE /* RBLessonPortal.app */,
+				81AF51591F5131F400C2F4EE /* RBLessonPortalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81AF51471F5131F400C2F4EE /* RBLessonPortal */ = {
+			isa = PBXGroup;
+			children = (
+				81990B371F52BE100091D373 /* ViewModels */,
+				81990B301F52B6D90091D373 /* Views */,
+				81AF516C1F51353C00C2F4EE /* Models */,
+				81AF51481F5131F400C2F4EE /* AppDelegate.swift */,
+				81AF514C1F5131F400C2F4EE /* Main.storyboard */,
+				81AF514F1F5131F400C2F4EE /* Assets.xcassets */,
+				81AF51511F5131F400C2F4EE /* LaunchScreen.storyboard */,
+				81AF51541F5131F400C2F4EE /* Info.plist */,
+			);
+			path = RBLessonPortal;
+			sourceTree = "<group>";
+		};
+		81AF515C1F5131F400C2F4EE /* RBLessonPortalTests */ = {
+			isa = PBXGroup;
+			children = (
+				81AF516A1F51351E00C2F4EE /* Models */,
+				81AF515F1F5131F400C2F4EE /* Info.plist */,
+			);
+			path = RBLessonPortalTests;
+			sourceTree = "<group>";
+		};
+		81AF516A1F51351E00C2F4EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81AF516B1F51353100C2F4EE /* Networking */,
+				81AF517A1F51EF3D00C2F4EE /* RBUserTokensTests.swift */,
+				81AF517E1F51F75F00C2F4EE /* RBRMUserTests.swift */,
+				81990B211F52956D0091D373 /* RBRMCompanyIDTests.swift */,
+				81990B231F5297390091D373 /* RBUserProfileTests.swift */,
+				81990B2B1F529FAA0091D373 /* RBRMLessonTests.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		81AF516B1F51353100C2F4EE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				81AF51681F5132B700C2F4EE /* RBAlamofireClientTests.swift */,
+				81AF51761F51D2F300C2F4EE /* RBWebServicesTests.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		81AF516C1F51353C00C2F4EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81AF516D1F51354500C2F4EE /* Networking */,
+				81AF517C1F51F25900C2F4EE /* RBUserTokens.swift */,
+				81990B1F1F527FC90091D373 /* RBRMUser.swift */,
+				81990B271F529BBF0091D373 /* RBRMCompanyID.swift */,
+				81990B251F529BA60091D373 /* RBRMUserProfile.swift */,
+				81990B291F529CF40091D373 /* RBRMLesson.swift */,
+				81990B3A1F52C0C70091D373 /* RBCredentialPersistanceManager.swift */,
+				81990B3C1F52D6510091D373 /* RBApplicationDataManager.swift */,
+				81990B461F53190B0091D373 /* RBTokenPersistanceManager.swift */,
+				81990B481F5325B20091D373 /* RBUserDataPersistanceManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		81AF516D1F51354500C2F4EE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				81AF516E1F5135A100C2F4EE /* RBAlamofireClient.swift */,
+				81AF51721F51872F00C2F4EE /* RBJSONConstants.swift */,
+				81AF51741F51D2B500C2F4EE /* RBWebServices.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		C2D655B86D9FD9919F36821D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0908D5F859063D4DE6CF007 /* Pods-RBLessonPortal.debug.xcconfig */,
+				899CEA57249F4D63AE1477C8 /* Pods-RBLessonPortal.release.xcconfig */,
+				75382D29E59693E24317ED7C /* Pods-RBLessonPortalTests.debug.xcconfig */,
+				E4F172E6FF72DC254FD4B903 /* Pods-RBLessonPortalTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB204CBDF815F503A63932EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3217AC21D5C3B3EF6EAEA664 /* Pods_RBLessonPortal.framework */,
+				3B9471FF25C73C831E6249D4 /* Pods_RBLessonPortalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81AF51441F5131F400C2F4EE /* RBLessonPortal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81AF51621F5131F400C2F4EE /* Build configuration list for PBXNativeTarget "RBLessonPortal" */;
+			buildPhases = (
+				63B7BC3C8F4E9B58E392DE59 /* [CP] Check Pods Manifest.lock */,
+				81AF51411F5131F400C2F4EE /* Sources */,
+				81AF51421F5131F400C2F4EE /* Frameworks */,
+				81AF51431F5131F400C2F4EE /* Resources */,
+				EEECA2E8E0DD2B01414A40F6 /* [CP] Embed Pods Frameworks */,
+				4579F2511B0FC531786B1392 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RBLessonPortal;
+			productName = RBLessonPortal;
+			productReference = 81AF51451F5131F400C2F4EE /* RBLessonPortal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81AF51581F5131F400C2F4EE /* RBLessonPortalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81AF51651F5131F400C2F4EE /* Build configuration list for PBXNativeTarget "RBLessonPortalTests" */;
+			buildPhases = (
+				80A7D516D7BC029CD546A04E /* [CP] Check Pods Manifest.lock */,
+				81AF51551F5131F400C2F4EE /* Sources */,
+				81AF51561F5131F400C2F4EE /* Frameworks */,
+				81AF51571F5131F400C2F4EE /* Resources */,
+				21CE54E6BF19B8D24FE7CD1C /* [CP] Embed Pods Frameworks */,
+				A06D49F3B704AABA50D4603D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81AF515B1F5131F400C2F4EE /* PBXTargetDependency */,
+			);
+			name = RBLessonPortalTests;
+			productName = RBLessonPortalTests;
+			productReference = 81AF51591F5131F400C2F4EE /* RBLessonPortalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81AF513D1F5131F400C2F4EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = RB;
+				TargetAttributes = {
+					81AF51441F5131F400C2F4EE = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					81AF51581F5131F400C2F4EE = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 81AF51441F5131F400C2F4EE;
+					};
+				};
+			};
+			buildConfigurationList = 81AF51401F5131F400C2F4EE /* Build configuration list for PBXProject "RBLessonPortal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81AF513C1F5131F400C2F4EE;
+			productRefGroup = 81AF51461F5131F400C2F4EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81AF51441F5131F400C2F4EE /* RBLessonPortal */,
+				81AF51581F5131F400C2F4EE /* RBLessonPortalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81AF51431F5131F400C2F4EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AF51531F5131F400C2F4EE /* LaunchScreen.storyboard in Resources */,
+				81AF51501F5131F400C2F4EE /* Assets.xcassets in Resources */,
+				81AF514E1F5131F400C2F4EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AF51571F5131F400C2F4EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21CE54E6BF19B8D24FE7CD1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBLessonPortalTests/Pods-RBLessonPortalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4579F2511B0FC531786B1392 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBLessonPortal/Pods-RBLessonPortal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63B7BC3C8F4E9B58E392DE59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RBLessonPortal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80A7D516D7BC029CD546A04E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RBLessonPortalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A06D49F3B704AABA50D4603D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBLessonPortalTests/Pods-RBLessonPortalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEECA2E8E0DD2B01414A40F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RBLessonPortal/Pods-RBLessonPortal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RBLessonPortal/Pods-RBLessonPortal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81AF51411F5131F400C2F4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81990B431F530C030091D373 /* RBUserLessonsInfoController.swift in Sources */,
+				81990B2A1F529CF40091D373 /* RBRMLesson.swift in Sources */,
+				81990B491F5325B20091D373 /* RBUserDataPersistanceManager.swift in Sources */,
+				81990B411F5304110091D373 /* RBPersonalUserInfoViewModel.swift in Sources */,
+				81990B201F527FC90091D373 /* RBRMUser.swift in Sources */,
+				81990B3B1F52C0C70091D373 /* RBCredentialPersistanceManager.swift in Sources */,
+				81AF517D1F51F25900C2F4EE /* RBUserTokens.swift in Sources */,
+				81AF516F1F5135A100C2F4EE /* RBAlamofireClient.swift in Sources */,
+				81990B261F529BA60091D373 /* RBRMUserProfile.swift in Sources */,
+				81990B281F529BBF0091D373 /* RBRMCompanyID.swift in Sources */,
+				81990B321F52B7040091D373 /* RBViewConstants.swift in Sources */,
+				81990B4B1F5331370091D373 /* RBUserProfileController.swift in Sources */,
+				81990B451F530F330091D373 /* RBUserLessonsInfoViewModel.swift in Sources */,
+				81990B341F52BA370091D373 /* RBLoginController.swift in Sources */,
+				81990B3F1F5303B10091D373 /* RBUserPersonalInfoController.swift in Sources */,
+				81990B471F53190B0091D373 /* RBTokenPersistanceManager.swift in Sources */,
+				81AF51491F5131F400C2F4EE /* AppDelegate.swift in Sources */,
+				81990B3D1F52D6510091D373 /* RBApplicationDataManager.swift in Sources */,
+				81AF51731F51872F00C2F4EE /* RBJSONConstants.swift in Sources */,
+				81990B361F52BE050091D373 /* RBLoginViewModel.swift in Sources */,
+				81AF51751F51D2B500C2F4EE /* RBWebServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AF51551F5131F400C2F4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81990B2C1F529FAA0091D373 /* RBRMLessonTests.swift in Sources */,
+				81990B241F5297390091D373 /* RBUserProfileTests.swift in Sources */,
+				81AF51771F51D2F300C2F4EE /* RBWebServicesTests.swift in Sources */,
+				81AF517B1F51EF3D00C2F4EE /* RBUserTokensTests.swift in Sources */,
+				81AF517F1F51F75F00C2F4EE /* RBRMUserTests.swift in Sources */,
+				81AF51691F5132B700C2F4EE /* RBAlamofireClientTests.swift in Sources */,
+				81990B221F52956D0091D373 /* RBRMCompanyIDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81AF515B1F5131F400C2F4EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81AF51441F5131F400C2F4EE /* RBLessonPortal */;
+			targetProxy = 81AF515A1F5131F400C2F4EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81AF514C1F5131F400C2F4EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81AF514D1F5131F400C2F4EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81AF51511F5131F400C2F4EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81AF51521F5131F400C2F4EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81AF51601F5131F400C2F4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81AF51611F5131F400C2F4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81AF51631F5131F400C2F4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0908D5F859063D4DE6CF007 /* Pods-RBLessonPortal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RBLessonPortal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RB.RBLessonPortal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		81AF51641F5131F400C2F4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 899CEA57249F4D63AE1477C8 /* Pods-RBLessonPortal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RBLessonPortal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RB.RBLessonPortal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		81AF51661F5131F400C2F4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75382D29E59693E24317ED7C /* Pods-RBLessonPortalTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = RBLessonPortalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RB.RBLessonPortalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RBLessonPortal.app/RBLessonPortal";
+			};
+			name = Debug;
+		};
+		81AF51671F5131F400C2F4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4F172E6FF72DC254FD4B903 /* Pods-RBLessonPortalTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = RBLessonPortalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RB.RBLessonPortalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RBLessonPortal.app/RBLessonPortal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81AF51401F5131F400C2F4EE /* Build configuration list for PBXProject "RBLessonPortal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81AF51601F5131F400C2F4EE /* Debug */,
+				81AF51611F5131F400C2F4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81AF51621F5131F400C2F4EE /* Build configuration list for PBXNativeTarget "RBLessonPortal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81AF51631F5131F400C2F4EE /* Debug */,
+				81AF51641F5131F400C2F4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81AF51651F5131F400C2F4EE /* Build configuration list for PBXNativeTarget "RBLessonPortalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81AF51661F5131F400C2F4EE /* Debug */,
+				81AF51671F5131F400C2F4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81AF513D1F5131F400C2F4EE /* Project object */;
+}
