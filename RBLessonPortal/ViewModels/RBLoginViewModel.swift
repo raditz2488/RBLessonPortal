@@ -28,7 +28,7 @@ enum RBLoginManagerError: Error {
 
 protocol RBCredentialPersistanceProtocol {
     func lastLoggedInUserCredentials() -> RBLoginCredentials?
-    func storeLoggedInUserCredentials(_ userCredentials: RBLoginCredentials?)
+    func storeLoggedInUserCredentials(_ userCredentials: RBLoginCredentials)
 }
 
 protocol RBLoginManager {
@@ -90,6 +90,7 @@ class RBLoginViewModel {
         loginStatus = .processing
         RBApplicationDataManager.shared.login(withUserName: userCredentials.username, password: userCredentials.password) { [weak self](success, error, message) in
             if success {
+                self?.credentialPersistanceManager.storeLoggedInUserCredentials(userCredentials)
                 self?.loginObserver?.userLoggedIn()
             } else {
                 self?.loginObserver?.userLogInFailed(withError: error, message: message)
